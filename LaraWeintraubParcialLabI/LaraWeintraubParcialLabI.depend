@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1634732377 source:c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\color.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"color.h"
+
+1634734761 source:c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\fecha.c
+	"fecha.h"
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
+1634736896 source:c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\moto.c
+	"moto.h"
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+
+1634736549 c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\moto.h
+	"tipo.h"
+	"color.h"
+
+1634736549 c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\validaciones.h
+
+1634734418 source:c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\servicio.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"servicio.h"
+
+1634732377 source:c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\tipo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tipo.h"
+
+1634734981 source:c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	"fecha.h"
+	"servicio.h"
+	"moto.h"
+	"trabajo.h"
+	"validaciones.h"
+
+1634731717 source:c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"validaciones.h"
+
+1634737010 source:c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\main.c
+	<stdio.h>
+	<stdlib.h>
+	"moto.h"
+	"tipo.h"
+	"trabajo.h"
+	"servicio.h"
+	"color.h"
+
+1634736549 c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\tipo.h
+
+1634736549 c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\trabajo.h
+	"fecha.h"
+	"servicio.h"
+
+1634736549 c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\fecha.h
+
+1634734418 c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\servicio.h
+
+1634736549 c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\color.h
+
+1634733657 source:c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\datawarehouse.c
+	"dataWarehouse.h"
+	"moto.h"
+	<string.h>
+
+1634733300 c:\users\lara\desktop\parciallabi\laraweintraubparciallabi\datawarehouse.h
+	"moto.h"
+
