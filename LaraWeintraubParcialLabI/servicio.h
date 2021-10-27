@@ -47,3 +47,5 @@ int validarIdServicio(eServicio servicios[], int tam, int id);
  *
  */
 int cargarDescripcionServicio(eServicio servicios[], int tam, int idServicio, char descripcion[]);
+
+float cargarPrecioServicio(eServicio servicios[], int tam, int idServicio);

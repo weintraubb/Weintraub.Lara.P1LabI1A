@@ -69,3 +69,11 @@ void mostrarTrabajo(eTrabajo trabajo, eServicio servicios[], int tamServicios);
  *
  */
 int mostrarTrabajos(eTrabajo lista[], int tam, eServicio servicios[], int tamServicios);
+
+int trabajosMoto(eMoto lista[], int tam, eTrabajo trabajos[], int tamTrabajos, eTipo tipos[], int tamTipos, eColor colores[], int tamColores, eServicio servicios[], int tamServicios);
+
+int importesMoto(eMoto lista[], int tam, eTipo tipos[], int tamTipos, eColor colores[], int tamColores, eTrabajo trabajos[], int tamTrabajos, eServicio servicios[], int tamServicios);
+
+int mostrarMotosServicio(eMoto lista[], int tam, eTipo tipos[], int tamTipos, eColor colores[], int tamColores, eServicio servicios[], int tamServicios, eTrabajo trabajos[], int tamTrabajo);
+
+int mostrarServiciosFecha(eTrabajo trabajos[], int tamTrabajos, eServicio servicios[], int tamServicios);

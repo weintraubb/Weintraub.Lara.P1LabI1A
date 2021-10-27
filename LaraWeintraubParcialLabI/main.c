@@ -5,6 +5,7 @@
 #include "trabajo.h"
 #include "servicio.h"
 #include "color.h"
+#include "dataWarehouse.h"
 
 #define TAM 10
 #define TAM_T 4
@@ -21,9 +22,10 @@ int main()
     eTrabajo trabajos[TAM_TR];
 
     char seguir = 's';
+    char seguirInformes = 's';
     int nextId = 1000;
     int nextIdTrabajo = 5000;
-    int flagTrabajo = 0;
+    int flagTrabajo = 1;
     int contadorMotos = 0;
 
     if(!inicializarMotos(motos, TAM))
@@ -36,6 +38,8 @@ int main()
         printf("Hubo un problema al inicializar trabajos\n");
     }
 
+    hardcodearMotos(motos, TAM, 9, &nextId);
+    hardcodearTrabajos(trabajos, TAM_TR, 9, &nextIdTrabajo);
     do
     {
         switch(menu())
@@ -108,6 +112,60 @@ int main()
             }
             break;
         case 10:
+            if(contadorMotos)
+            {
+                do
+                {
+                    switch(menuInformes())
+                    {
+                    case 1:
+                        mostrarMotosColor(motos, TAM, tipos, TAM_T, colores, TAM_C);
+                        break;
+                    case 2:
+                        informarPromedio(motos, TAM, tipos, TAM_T);
+                        break;
+                    case 3:
+                        mayorCilindrada(motos, TAM, tipos, TAM_T, colores, TAM_C);
+                        break;
+                    case 4:
+                        system("cls");
+                        ordenarMotosTipo(motos, TAM);
+                        mostrarMotos(motos, TAM, tipos, TAM_T, colores, TAM_C);
+                        break;
+                    case 5:
+                        contarMotosColorTipo(motos, TAM, tipos, TAM_T, colores, TAM_C);
+                        break;
+                    case 6:
+                        colorMasElegido(motos, TAM, colores, TAM_C);
+                        break;
+                    case 7:
+                        trabajosMoto(motos, TAM, trabajos, TAM_TR, tipos, TAM_T, colores, TAM_C, servicios, TAM_S);
+                        break;
+                    case 8:
+                        importesMoto(motos, TAM, tipos, TAM_T, colores, TAM_C, trabajos, TAM_TR, servicios, TAM_S);
+                        break;
+                    case 9:
+                        mostrarMotosServicio(motos, TAM, tipos, TAM_T, colores, TAM_C, servicios, TAM_S, trabajos, TAM_T);
+                        break;
+                    case 10:
+                        mostrarServiciosFecha(trabajos, TAM_TR, servicios, TAM_S);
+                        break;
+                    case 11:
+                        seguirInformes = 'n';
+                        break;
+                    default:
+                        printf("\nPor favor ingrese una opcion valida\n");
+                        break;
+                    }
+                    system("pause");
+                }while (seguirInformes=='s');
+            }
+            else
+            {
+                printf("\nPrimero debe ingresar una moto\n");
+            }
+            break;
+        case 11:
             seguir = 'n';
             break;
         default:

@@ -65,3 +65,21 @@ int cargarDescripcionServicio(eServicio servicios[], int tam, int idServicio, ch
     }
     return retorno;
 }
+
+float cargarPrecioServicio(eServicio servicios[], int tam, int idServicio)
+{
+    float precio = 0;
+
+    if(servicios!=NULL && tam>0)
+    {
+        for(int i=0; i<tam; i++)
+        {
+            if(servicios[i].id == idServicio)
+            {
+                precio = servicios[i].precio;
+                break;
+            }
+        }
+    }
+    return precio;
+}

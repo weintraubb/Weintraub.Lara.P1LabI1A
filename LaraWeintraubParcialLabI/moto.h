@@ -131,4 +131,18 @@ int menuModificacion();
  */
 int bajaMoto(eMoto lista[], int tam, eTipo tipos[], int tamTipos, eColor colores[], int tamColores);
 
+int menuInformes();
 
+int mostrarMotosColor(eMoto lista[], int tam, eTipo tipos[], int tamTipos, eColor colores[], int tamColores);
+
+int informarPromedio(eMoto lista[], int tam, eTipo tipos[], int tamTipos);
+
+int mayorCilindrada(eMoto lista[], int tam, eTipo tipos[], int tamTipos, eColor colores[], int tamColores);
+
+int mostrarMotosUnTipo(eMoto lista[], int tam, eTipo tipos[], int tamTipos, eColor colores[], int tamColores);
+
+int ordenarMotosTipo(eMoto lista[], int tam);
+
+int colorMasElegido(eMoto lista[], int tam, eColor colores[], int tamColores);
+
+int contarMotosColorTipo(eMoto lista[], int tam, eTipo tipos[], int tamTipos, eColor colores[], int tamColores);
